@@ -1,0 +1,53 @@
+{
+    "info": {
+        "_postman_id": "12345678-1234-5678-9012-123456789012",
+        "name": "LinkedIn Insights API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get LinkedIn Page Details",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://your-ec2-ip:8080/api/linkedin/page/{pageId}",
+                    "host": ["http://your-ec2-ip:8080"],
+                    "path": ["api", "linkedin", "page", "{pageId}"]
+                }
+            }
+        },
+        {
+            "name": "Get Pages by Follower Count Range",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://moinuddin-ec2-ip:8080/api/linkedin/pages?followersMin=10000&followersMax=50000",
+                    "host": ["http://moinuddin-ec2-ip:8080"],
+                    "path": ["api", "linkedin", "pages"],
+                    "query": [
+                        {"key": "followersMin", "value": "10000"},
+                        {"key": "followersMax", "value": "50000"}
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Recent Posts of a Page",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "http://moinuddin-ec2-ip:8080/api/linkedin/posts?pageId={pageId}&limit=10",
+                    "host": ["http://moinuddin-ec2-ip:8080"],
+                    "path": ["api", "linkedin", "posts"],
+                    "query": [
+                        {"key": "pageId", "value": "{pageId}"},
+                        {"key": "limit", "value": "10"}
+                    ]
+                }
+            }
+        }
+    ]
+}
