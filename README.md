@@ -32,8 +32,6 @@ Postman Collection: Ready-to-use API collection.
 
 Bonus Features:
 
-AI Summary: Generates a summary of the page using ChatGPT API.
-
 Asynchronous Processing: Implements background tasks for scraping and storage.
 
 Cloud Storage: Saves LinkedIn profile pictures and posts in AWS S3.
@@ -42,7 +40,7 @@ Caching: Implements caching with a 5-minute TTL for optimized performance.
 
 Docker Support: Deployable with Docker.
 
-Technology Stack
+***Technology Stack
 
 Backend: Java, Spring Boot
 
